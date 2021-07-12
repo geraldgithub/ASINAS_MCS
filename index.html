@@ -243,7 +243,7 @@ body.dark .score #play_again{
     border:1px solid #9c9cbd;
 }
 </style>
-<body onload="Play()">
+<body onload="CheckConnection">
     <header>
         <button class="menu">Dark Mode</button>
 
@@ -704,8 +704,6 @@ body.dark .score #play_again{
             }
            
         });
-
-        document.querySelector("#music").play();
         
         function CheckConnection(){
          let status = navigator.onLine;
