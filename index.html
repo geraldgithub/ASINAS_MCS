@@ -705,9 +705,19 @@ body.dark .score #play_again{
            
         });
 
-        function Play(){
-            document.querySelector("#music").play();
+        document.querySelector("#music").play();
+        
+        function CheckConnection(){
+         let status = navigator.onLine;
+         if(status){   
+             document.querySelector("#music").play();
+        }else{
+            alert("No internet connection");
         }
+           
+
+        
+        
     </script>
 </body>
 </html>
