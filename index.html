@@ -243,7 +243,7 @@ body.dark .score #play_again{
     border:1px solid #9c9cbd;
 }
 </style>
-<body onload="CheckConnection()">
+<body>
     <header>
         <button class="menu">Dark Mode</button>
 
@@ -706,13 +706,13 @@ body.dark .score #play_again{
         });
         
         function CheckConnection(){
-         let status = navigator.onLine;
-         if(status){   
+         let statusCon = navigator.onLine;
+         if(statusCon){   
              document.querySelector("#music").play();
         }else{
             alert("No internet connection");
         }
-           
+        CheckConnection();
 
         
         
